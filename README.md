@@ -3,7 +3,9 @@
 Aplikacija za sve ljubitelje macaka i pasa, sa informacijama i slikama vasih omiljenih cetvoronoznih ljubimaca.
 
 Napravljene rute koje za sada imaju Home, About, Cats, Dogs, Contact i Special Thanks komponente.
+
 Napravljene SignUp i LogIn forma, koje bi trebalo da se pojave cim se pokrene stranica, za sada se pojavljuje samo LogIn.
+
 Potrebno napraviti LogOut.
 Takodje pojavljuje se navigacioni bar kojem se ne moze pristupiti ukoliko korisnik nije ulogovan, ali bih zelela da podesim da se navigacioni bar pojavljuje tek kada se korisnik uloguje.
 Home komponenta i About komponenta su za sada prazne, jedna ce verovatno biti obrisana i korisnik ce prilikom logovanja otici na onu koja ostane.
