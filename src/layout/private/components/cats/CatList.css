@@ -1,0 +1,21 @@
+#container{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cat-dog{
+    text-align: center;
+    background-color: khaki;
+    border-style: solid;
+    border-color: lemonchiffon;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* align-content: center; */
+    /* display:flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* justify-content:space-evenly; */
+
+    /* margin: 20px; */
+
+}
