@@ -1,25 +1,68 @@
-# Zavrsni-projekat---MacKer
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Aplikacija za sve ljubitelje macaka i pasa, sa informacijama i slikama vasih omiljenih cetvoronoznih ljubimaca.
+## Available Scripts
 
-Napravljene rute koje za sada imaju Home, About, Cats, Dogs, Contact i Special Thanks komponente.
+In the project directory, you can run:
 
-Napravljene SignUp i LogIn forma, koje bi trebalo da se pojave cim se pokrene stranica, za sada se pojavljuje samo LogIn.
+### `npm start`
 
-Potrebno napraviti LogOut.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Takodje pojavljuje se navigacioni bar kojem se ne moze pristupiti ukoliko korisnik nije ulogovan, ali bih zelela da podesim da se navigacioni bar pojavljuje tek kada se korisnik uloguje.
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-Home komponenta i About komponenta su za sada prazne, jedna ce verovatno biti obrisana i korisnik ce prilikom logovanja otici na onu koja ostane.
+### `npm test`
 
-Komponenta Cats i Dogs su identicne sto se koda tice, samo se prikazuje razliciti sadrzaj.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Komponenta Cats sadrzi prikaz svih vrsti macaka za koje je napravljeno stranicenje. Postoji mogucnost da se preko input polja filtriraju macke po imenu, s tim da filtriranje radi samo ukoliko se korisnik nalazi na prvoj stranici. Postoji mogucnost da se preko select polja izlistaju sve macke po zemlji porekla. Takodje radi samo ako se korisnik nalazi na prvoj stranici. Postoji dugme na ciji se klik prikazuje random slika macke. Ukoliko bude ostalo vremena zelela bih da putem post metode omogucim korisnicima da na server uploaduju slike macaka. Za sada napravljena samo input forma koja uzima fajl sa kompjutera. Treba dodati dugme koje ce vracati korisnika na vrh stranice. Jos jedna ideja je da se na klik dugmeta izbacuju random facts o mackama.
+### `npm run build`
 
-Komponenta Dogs sadrzi prikaz svih vrsti pasa za koje je napravljeno stranicenje. Postoji mogucnost da se preko input polja filtriraju psi po nazivu, s tim da filtriranje radi samo ukoliko se korisnik nalazi na prvoj stranici.Postoji mogucnost da se preko select polja izlistaju svi psi po grupi rasa.  Takodje postoje neke grupe rasa koje su undefined pa se one prikazuju kao prazno polje u selectu. Takodje radi samo ako se korisnik nalazi na prvoj stranici. Postoji dugme na ciji se klik prikazuje random slika psa. Ukoliko bude ostalo vremena zelela bih da putem post metode omogucim korisnicima da na server uploaduju slike pasa. Treba dodati dugme koje ce vracati korisnika na vrh stranice. Jos jedna ideja je da se na klik dugmeta izbacuju random facts o psima.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Contact komponenta ce verovatno biti moji podaci.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-Potrebno je srediti aplikaciju u CSS-u i namestiti da bude responsive.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Potrebno je hostovati aplikaciju na domen.
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
