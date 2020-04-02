@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getDogBreeds, getRandomDogImage } from '../../../../services/Dog_service';
-import DogImage from './DogImage';
+import { getDogBreeds } from '../../../../services/Dog_service';
 import DogList from './DogList';
 import InputDog from './InputDog'
 import PaginationDog from './PaginationDog'
@@ -9,17 +8,17 @@ import SelectDog from './SelectDog'
 const Dogs = () => {
 
     const [dogs, setDogs] = useState([]);
-    const [dogPicture, setDogPicture] = useState([])
     const [subArray, setSubArray] = useState([])
     const [currentPage, setCurrentPage] = useState(1)
-    const [dogPerPage] = useState(20)
+    const dogPerPage = 12
+    const [subChangeArray, setSubChangeArray] = useState([])
+
 
 
     useEffect(() => {
         getDogBreeds().then(data => {
             setDogs(data);
-            // setSubArray(data)
-            // console.log(data)
+            setSubChangeArray(data)
         })
     }, [])
 
@@ -29,28 +28,23 @@ const Dogs = () => {
     }
 
     const handleInput = (e) => {
-        // if (e.target.value === ''){
-        //     setSubArray([]);
-        //     return
-        //   }
+        if (e.target.value === '') {
+            return setSubArray([]);
+
+        }
         let filteredInput = dogs.filter(el => el.name.includes(e.target.value));
         setSubArray(filteredInput)
     }
 
 
-    const showMeSomeDogs = () => {
-        getRandomDogImage().then(response => {
-            setDogPicture(response);
-        });
-    }
 
     const handleChange = (e) => {
         let selected = e.target.value;
         if (selected === "all") {
-            setSubArray(dogs);
+            setSubChangeArray(dogs);
         } else {
             let filtered = dogs.filter(el => el.breed_group === selected);
-            setSubArray(filtered)
+            setSubChangeArray(filtered)
         }
     }
 
@@ -63,12 +57,17 @@ const Dogs = () => {
 
     return (
         <div>
-            <SelectDog handleChange={handleChange} dogs={dogs} />
-            <DogImage dogPicture={dogPicture} />
-            <button onClick={() => showMeSomeDogs()}>Next Dog</button>
-            <InputDog handleInput={handleInput} />
+            <div className="div-all">
+                <div className="div-input">
+                    <p><b>Find more info about your favorite dog</b></p>
+                    <InputDog handleInput={handleInput} />
+                </div>
+                <div className="div-select">
+                    <SelectDog handleChange={handleChange} dogs={dogs} />
+                </div>
+            </div>
             {subArray.length > 0 ? <DogList dogs={subArray} currentPage={1} dogPerPage={dogPerPage} /> :
-                <DogList dogs={dogs} currentPage={currentPage} dogPerPage={dogPerPage} />}
+                <DogList dogs={subChangeArray} currentPage={currentPage} dogPerPage={dogPerPage} />}
             <PaginationDog dogPerPage={dogPerPage} dogs={dogs} setPage={setPage} />
             <button onClick={() => { scrollToTop() }}>Top</button>
         </div>

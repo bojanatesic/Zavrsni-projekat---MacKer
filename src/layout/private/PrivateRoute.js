@@ -3,7 +3,6 @@ import { Route, Redirect } from "react-router-dom";
 import { isLogin } from '../../services/Auth_service';
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
-    // console.log('is login', isLogin())
     return (
         <Route {...rest} render={ props => (
             isLogin() ?

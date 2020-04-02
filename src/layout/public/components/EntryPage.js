@@ -6,11 +6,11 @@ import './EntryPage.css'
 const EntryPage = () => {
 
     return (
-<>
-        <h3 id="heading">MacKer</h3>
-            <SignUp />
+        <div className="macker">
+            <h3 className="mackerh3">MacKer</h3>
             <LogIn />
-        </>
+            <SignUp />
+        </div>
     )
 }
 

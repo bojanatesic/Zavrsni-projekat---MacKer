@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { PostUser } from '../../../services/Coetus_service'
 import { setToken } from '../../../services/Auth_service'
-
+import './EntryPage.css'
 
 
 
@@ -14,21 +14,26 @@ export const LogIn = () => {
     const handleLogin = (e) => {
         e.preventDefault()
         if (username.trim() === '' || password.trim() === '') {
-            alert('Inputs cannot be empty!')
+            return alert('Inputs cannot be empty!')
         }
         PostUser(username,password).then ((res) => {
             setToken(res.data.token)
             console.log(res)
             history.push('about')
         }).catch(() => {
-            console.log('something wrong')
+            alert('You must Sign up!')
         })
     }
+
+    
     return (
+        <div className="form-style-8">
+        <h2>Login to Macker</h2>
         <form onSubmit={handleLogin} id="login-form">
-            <input type="text" placeholder="Username" onChange={e => setUsername(e.target.value)} />
+            <input type="text" name="field1" placeholder="Username" onChange={e => setUsername(e.target.value)} />
             <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
             <input type="submit" value="LogIn" />
         </form>
+        </div>
     )
 }

@@ -1,7 +1,86 @@
-
-#heading{
-    line-height:100px;
-    float: left;
-    text-transform: uppercase;
+body{
+    background: #faeceb;
 }
 
+.mackerh3 {
+    text-align: center;
+  }
+  
+  
+  .form-style-8{
+      font-family: 'Open Sans Condensed', arial, sans;
+      width: 400px;
+      padding: 30px;
+      background: #f0f1f8;
+      margin: 50px auto;
+      box-shadow: 0px 0px 15px rgba(212, 185, 185, 0.22);
+      -moz-box-shadow: 0px 0px 15px rgba(212, 185, 185, 0.22);
+      -webkit-box-shadow:  0px 0px 15px rgba(212, 185, 185, 0.22);
+  
+  }
+  .form-style-8 h2{
+      background: #545871;
+      text-transform: uppercase;
+      font-family: 'Open Sans Condensed', sans-serif;
+      color:#dadbe7;
+      font-size: 18px;
+      font-weight: 100;
+      padding: 20px;
+      margin: -30px -30px 30px -30px;
+      text-align: center;
+  }
+  .form-style-8 input[type="text"],
+  .form-style-8 input[type="date"],
+  .form-style-8 input[type="datetime"],
+  .form-style-8 input[type="email"],
+  .form-style-8 input[type="number"],
+  .form-style-8 input[type="search"],
+  .form-style-8 input[type="time"],
+  .form-style-8 input[type="url"],
+  .form-style-8 input[type="password"],
+  .form-style-8 textarea,
+  .form-style-8 select 
+  {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      outline: none;
+      display: block;
+      width: 100%;
+      padding: 7px;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      background: transparent;
+      margin-bottom: 10px;
+      font: 16px Arial, Helvetica, sans-serif;
+      height: 45px;
+  }
+  .form-style-8 textarea{
+      resize:none;
+      overflow: hidden;
+  }
+  .form-style-8 input[type="button"], 
+  .form-style-8 input[type="submit"]{
+      -moz-box-shadow: inset 0px 1px 0px 0px #333333;
+      -webkit-box-shadow: inset 0px 1px 0px 0px #333333;
+      box-shadow: inset 0px 1px 0px 0px #333333;
+      background-color:#545871;
+      border: 1px solid #333333;
+      display: inline-block;
+      cursor: pointer;
+      color: #FFFFFF;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 14px;
+      padding: 8px 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  .form-style-8 input[type="button"]:hover, 
+  .form-style-8 input[type="submit"]:hover {
+      background-color:#faeceb;
+      color:#545871
+  }
+
+  .p-signup{
+      font-size: 11px;
+  }

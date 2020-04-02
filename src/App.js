@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
-// import './App.css';
+import './App.css';
 import About from './layout/private/components/About';
 import Cats from './layout/private/components/cats/Cats';
 import Dogs from './layout/private/components/dogs/Dogs';

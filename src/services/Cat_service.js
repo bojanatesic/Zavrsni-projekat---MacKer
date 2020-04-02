@@ -10,7 +10,4 @@ export const getCatImage = ()=> {
     return axios.get (`${baseCatsUrl}/images/search?format=json`).then(response => response)
 }
 
-export const postCatImage = ()=> {
-    return axios.post (`${baseCatsUrl}/images/upload`).then(response => response)
-}
 

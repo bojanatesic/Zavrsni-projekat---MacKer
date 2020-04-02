@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #9497a7;
+  --dark-color: #545871;
+  --light-color: #dadbe7;
+  --danger-color: #c37e7b;
+  --success-color: #28a745;
+}
+
 .App {
   text-align: center;
 }
@@ -35,5 +43,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App {
+  min-height: 100vh;
+  background-color: #f1cfcd;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  background-blend-mode: soft-light, screen;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+html, body, ul {
+  padding:0;
+  margin:0;
 }
 
