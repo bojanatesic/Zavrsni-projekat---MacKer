@@ -13,7 +13,7 @@ const SelectCat = ({ cats, handleChange }) => {
     return (
         <>
             <select onChange={handleChange}>
-                <option value="all">Select cat by origin</option>
+                <option value="all">Select</option>
                 {options}
             </select>
         </>

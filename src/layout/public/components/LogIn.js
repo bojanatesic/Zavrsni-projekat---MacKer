@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { PostUser } from '../../../services/Coetus_service'
-import { setToken } from '../../../services/Auth_service'
+import { getToken, setToken } from '../../../services/Auth_service'
 import './EntryPage.css'
+import Nav from '../../../Nav'
 
 
 
@@ -17,6 +18,7 @@ export const LogIn = () => {
             return alert('Inputs cannot be empty!')
         }
         PostUser(username,password).then ((res) => {
+            // getToken(res.data.token)
             setToken(res.data.token)
             console.log(res)
             history.push('about')
@@ -27,6 +29,8 @@ export const LogIn = () => {
 
     
     return (
+        <>
+        <Nav/>
         <div className="form-style-8">
         <h2>Login to Macker</h2>
         <form onSubmit={handleLogin} id="login-form">
@@ -35,5 +39,6 @@ export const LogIn = () => {
             <input type="submit" value="LogIn" />
         </form>
         </div>
+        </>
     )
 }

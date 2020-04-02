@@ -13,7 +13,7 @@ const SelectDog = ({ dogs, handleChange }) => {
     return (
         <>
             <select onChange={handleChange}>
-                <option value="all">Select dog by breed group</option>
+                <option value="all">Select</option>
                 {options}
             </select>
         </>

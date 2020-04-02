@@ -9,10 +9,10 @@ body{
   
   .form-style-8{
       font-family: 'Open Sans Condensed', arial, sans;
-      width: 400px;
-      padding: 30px;
+      width: 30%;
+      padding: 3%;
       background: #f0f1f8;
-      margin: 50px auto;
+      margin: 5% auto;
       box-shadow: 0px 0px 15px rgba(212, 185, 185, 0.22);
       -moz-box-shadow: 0px 0px 15px rgba(212, 185, 185, 0.22);
       -webkit-box-shadow:  0px 0px 15px rgba(212, 185, 185, 0.22);
@@ -25,7 +25,7 @@ body{
       color:#dadbe7;
       font-size: 18px;
       font-weight: 100;
-      padding: 20px;
+      padding: 2%;
       margin: -30px -30px 30px -30px;
       text-align: center;
   }

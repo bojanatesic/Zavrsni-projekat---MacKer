@@ -4,6 +4,7 @@ import DogList from './DogList';
 import InputDog from './InputDog'
 import PaginationDog from './PaginationDog'
 import SelectDog from './SelectDog'
+import Nav from '../../../../Nav';
 
 const Dogs = () => {
 
@@ -56,21 +57,27 @@ const Dogs = () => {
     }
 
     return (
-        <div>
-            <div className="div-all">
-                <div className="div-input">
-                    <p><b>Find more info about your favorite dog</b></p>
-                    <InputDog handleInput={handleInput} />
+        <>
+            <Nav />
+            <div>
+                <div className="div-all">
+                    <div className="div-input">
+                        <p><b>Find more info about your favorite dog</b></p>
+                        <InputDog handleInput={handleInput} />
+                    </div>
+                    <div className="div-select">
+                        <p><b>Discover dogs by its breed group</b></p>
+                        <SelectDog handleChange={handleChange} dogs={dogs} />
+                    </div>
                 </div>
-                <div className="div-select">
-                    <SelectDog handleChange={handleChange} dogs={dogs} />
+                {subArray.length > 0 ? <DogList dogs={subArray} currentPage={1} dogPerPage={dogPerPage} /> :
+                    <DogList dogs={subChangeArray} currentPage={currentPage} dogPerPage={dogPerPage} />}
+                <div className="pagination">
+                    <PaginationDog dogPerPage={dogPerPage} dogs={dogs} setPage={setPage} />
                 </div>
+                <button onClick={() => { scrollToTop() }} className="top-btn">Go to the top of the page</button>
             </div>
-            {subArray.length > 0 ? <DogList dogs={subArray} currentPage={1} dogPerPage={dogPerPage} /> :
-                <DogList dogs={subChangeArray} currentPage={currentPage} dogPerPage={dogPerPage} />}
-            <PaginationDog dogPerPage={dogPerPage} dogs={dogs} setPage={setPage} />
-            <button onClick={() => { scrollToTop() }}>Top</button>
-        </div>
+        </>
     )
 }
 

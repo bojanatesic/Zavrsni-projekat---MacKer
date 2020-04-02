@@ -5,6 +5,7 @@ import InputCat from './InputCat';
 import SelectCat from './SelectCat';
 import CatList from './CatList';
 import PaginationCat from './PaginationCat';
+import Nav from '../../../../Nav';
 
 const Cats = () => {
 
@@ -52,6 +53,8 @@ const Cats = () => {
     }
 
     return (
+        <>
+        <Nav />
         <div>
             <div className="div-all">
             <div className="div-input">
@@ -59,14 +62,18 @@ const Cats = () => {
             <InputCat handleInput={handleInput} />
             </div>
             <div className="div-select">
+            <p><b>Discover cats from all around the world</b></p>
             <SelectCat handleChange={handleChange} cats={cats} />
             </div>
             </div>
             {subArray.length > 0 ? <CatList cats={subArray} currentPage={1} catPerPage={catPerPage} />
                 : <CatList cats={subChangeArray} currentPage={currentPage} catPerPage={catPerPage} />}
+                <div className="pagination">
             <PaginationCat catPerPage={catPerPage} cats={cats} setPage={setPage} />
-            <button onClick={() => { scrollToTop() }}>Top</button>
+            </div>
+            <button onClick={() => { scrollToTop() }} className="top-btn">Go to the top of the page</button>
         </div>
+        </>
     )
 }
 export default Cats

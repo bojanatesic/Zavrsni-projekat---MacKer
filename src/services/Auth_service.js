@@ -23,7 +23,6 @@ export const getToken = () => {
 }
 
 export const isLogin = () => {
-    // return true;
     return state.token || localStorage.getItem('token');
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import './CatList.css'
 
 const PaginationCat = ({catPerPage, cats, setPage})=>{
     const pages = [];
@@ -8,10 +9,10 @@ const PaginationCat = ({catPerPage, cats, setPage})=>{
       }
   
     return (
-        <div>
+      <>
         {pages.map(page => (
-        <button onClick={() =>{ setPage(page)}} key={page}>{page}</button>))}
-      </div>
+        <button onClick={() =>{ setPage(page)}} key={page} >{page}</button>))}
+      </>
 
     )
 }

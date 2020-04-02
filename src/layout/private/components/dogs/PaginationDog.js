@@ -8,10 +8,10 @@ const PaginationDog = ({dogPerPage, dogs, setPage})=>{
       }
   
     return (
-        <div>
+      <>
         {pages.map(page => (
         <button onClick={() =>{ setPage(page)}} key={page}>{page}</button>))}
-      </div>
+        </>
 
     )
 }
