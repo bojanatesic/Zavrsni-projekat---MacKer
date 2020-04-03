@@ -43,9 +43,11 @@ const Dogs = () => {
         let selected = e.target.value;
         if (selected === "all") {
             setSubChangeArray(dogs);
+            setCurrentPage(1)
         } else {
             let filtered = dogs.filter(el => el.breed_group === selected);
             setSubChangeArray(filtered)
+            setCurrentPage(1)
         }
     }
 

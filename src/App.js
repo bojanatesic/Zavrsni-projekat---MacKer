@@ -12,6 +12,7 @@ import Logout from './layout/private/components/Logout';
 import WelcomePage from './layout/public/components/WelcomePage';
 import { SignUp } from './layout/public/components/SignUp';
 import { LogIn } from './layout/public/components/LogIn';
+import Profile from './layout/private/components/Profile';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <PrivateRoute component={About} exact path="/about" />
         <PrivateRoute component={Cats} path="/cats" />
         <PrivateRoute component={Dogs} exact path="/dogs" />
+        <PrivateRoute component={Profile} exact path="/profile" />
         <PrivateRoute component={Logout} exact path="/logout" />
       </Switch>
     </Router>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { getToken, setToken} from '../../../services/Auth_service'
+import { getToken, setToken, setId} from '../../../services/Auth_service'
 import { useHistory } from 'react-router-dom'
 import { PutUser } from '../../../services/Coetus_service'
 import './EntryPage.css'
@@ -30,6 +30,8 @@ export const SignUp = () => {
 
         PutUser(name, surname, username, password, email).then((res) => {
             getToken(res.data.token)
+            setId(res.data.user.user_id)
+
             console.log(res)
             // setToken(res.data.token)
             // console.log(res)

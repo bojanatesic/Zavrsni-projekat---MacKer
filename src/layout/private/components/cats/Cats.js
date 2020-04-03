@@ -26,9 +26,12 @@ const Cats = () => {
         let selected = e.target.value;
         if (selected === "all") {
             setSubChangeArray(cats);
+            setCurrentPage(1)
         } else {
             let filtered = cats.filter(el => el.origin === selected);
             setSubChangeArray(filtered)
+            setCurrentPage(1)
+
         }
     }
 

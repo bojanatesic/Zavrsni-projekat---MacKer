@@ -26,3 +26,12 @@ export const isLogin = () => {
     return state.token || localStorage.getItem('token');
 }
 
+export const setId=(id)=>{
+    localStorage.setItem('id' , id)
+    state.id=id
+}
+
+export const getId =()=>{
+    const id = state.id? state.id:localStorage.getItem('id')? localStorage.getItem('id'):null
+    return id
+}

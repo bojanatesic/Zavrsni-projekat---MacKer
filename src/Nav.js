@@ -12,6 +12,7 @@ return(
           <p><Link to="/about">About</Link></p>
           <p><Link to="/cats">Cats</Link></p>
           <p><Link to="/dogs">Dogs</Link></p>
+          <p><Link to="/profile">Profile</Link></p>
           <p><Link to="/logout">Log out</Link></p>
         </ul>
       </div>
