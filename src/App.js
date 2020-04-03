@@ -22,7 +22,6 @@ function App() {
     <Router>
     {/* <Nav /> */}
       <Switch>
-        <PublicRoute component={WelcomePage} exact path="/" />
         <PublicRoute component={LogIn} exact path='/login'/>
         <PublicRoute component={SignUp} exact path='/register'/>
 
@@ -31,6 +30,7 @@ function App() {
         <PrivateRoute component={Dogs} exact path="/dogs" />
         <PrivateRoute component={Profile} exact path="/profile" />
         <PrivateRoute component={Logout} exact path="/logout" />
+        <PublicRoute component={WelcomePage} path="/" />
       </Switch>
     </Router>
     </>
