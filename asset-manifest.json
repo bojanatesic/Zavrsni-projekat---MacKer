@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/zavrsni-projekat-macker/static/css/main.393afa8d.chunk.css",
+    "main.js": "/zavrsni-projekat-macker/static/js/main.1d445fa0.chunk.js",
+    "main.js.map": "/zavrsni-projekat-macker/static/js/main.1d445fa0.chunk.js.map",
+    "runtime-main.js": "/zavrsni-projekat-macker/static/js/runtime-main.f080bfa0.js",
+    "runtime-main.js.map": "/zavrsni-projekat-macker/static/js/runtime-main.f080bfa0.js.map",
+    "static/js/2.6fce4bf1.chunk.js": "/zavrsni-projekat-macker/static/js/2.6fce4bf1.chunk.js",
+    "static/js/2.6fce4bf1.chunk.js.map": "/zavrsni-projekat-macker/static/js/2.6fce4bf1.chunk.js.map",
+    "index.html": "/zavrsni-projekat-macker/index.html",
+    "precache-manifest.aec5669e431f71117c1194743db9afd8.js": "/zavrsni-projekat-macker/precache-manifest.aec5669e431f71117c1194743db9afd8.js",
+    "service-worker.js": "/zavrsni-projekat-macker/service-worker.js",
+    "static/css/main.393afa8d.chunk.css.map": "/zavrsni-projekat-macker/static/css/main.393afa8d.chunk.css.map",
+    "static/js/2.6fce4bf1.chunk.js.LICENSE.txt": "/zavrsni-projekat-macker/static/js/2.6fce4bf1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f080bfa0.js",
+    "static/js/2.6fce4bf1.chunk.js",
+    "static/css/main.393afa8d.chunk.css",
+    "static/js/main.1d445fa0.chunk.js"
+  ]
+}
