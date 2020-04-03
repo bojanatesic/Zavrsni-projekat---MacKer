@@ -7,25 +7,29 @@ const Profile = () =>{
         name:'',
         surname:'',
         username:'',
-        email:''
+        email:'',
+        picture:''
     })
 
 let userId=localStorage.getItem('id')
     useEffect(() => {
         GetUser(userId).then(data => {
-            setUserInfo({name:data.user.name, surname:data.user.surname, username:data.user.username, email:data.user.email})
+            setUserInfo({name:data.user.name, surname:data.user.surname, username:data.user.username, email:data.user.email, picture:data.user.picture})
             console.log(data)
         })
     }, [userId])
 
     return(
-<div>
+    <>
     <Nav/>
+<div id="profile">
     <p>{`Here is your profile,`} <b> {userInfo.username}</b></p>
     <p>{`Your name is: ${userInfo.name}`}</p>
     <p>{`Your surname is: ${userInfo.surname}`}</p>
     <p>{`Your email is: ${userInfo.email}`}</p>
+    {/* <img src={userInfo.picture} alt="You haven't uploaded your picture yet"/> */}
 </div>
+</>
     )
 }
 

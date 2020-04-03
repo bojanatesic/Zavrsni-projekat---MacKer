@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { PostUser } from '../../../services/Coetus_service'
-import { getToken, setToken, setId } from '../../../services/Auth_service'
+import {setToken, setId } from '../../../services/Auth_service'
 import './EntryPage.css'
 import Nav from '../../../Nav'
 
