@@ -8,11 +8,13 @@ Ukoliko izaberete opciju registracije, unose se podaci koji sadrze ime, prezime,
 
 Nakon registracije, aplikacija vas vodi na stranicu za logovanje gde u formi unosite svoj username i sifru koju ste prethodno registrovali. Nakon logovanja, u navigacionom baru se ispisuju komponente kojima mozete pristupiti.
 
-U komponenti About stoji tekst sa kracim opisom sta mozete naci na sajtu kao i dva dugmeta na ciji klik vam se prikazuju slike macaka, odnosno slike pasa.
+U sekciji About stoji tekst sa kracim opisom sta mozete naci na sajtu kao i dva dugmeta na ciji klik vam se prikazuju slike macaka, odnosno slike pasa.
 
-U komponenti Cats nalazi se ispis sa informacijama o svim vrstama macaka. Nalazi se search polje preko koga se mogu filtrirati macke po nazivu. Postoji Select polje preko koga se mogu selektovati sve macke po zemlji porekla. Na dnu se nalaze dugmici koji predstavljaju stranice kao i dugme za povratak korisnika na vrh stranice.
+U sekciji Cats nalazi se ispis sa informacijama o svim vrstama macaka. Nalazi se search polje preko koga se mogu filtrirati macke po nazivu. Postoji Select polje preko koga se mogu selektovati sve macke po zemlji porekla. Na dnu se nalaze dugmici koji predstavljaju stranice kao i dugme za povratak korisnika na vrh stranice.
 
-U komponenti Dogs nalazi se ispis sa informacijama o svim vrstama pasa. Nalazi se search polje preko koga se mogu filtrirati psi po nazivu. Postoji Select polje preko koga se mogu selektovati sve macke po grupi rase. Na dnu se nalaze dugmici koji predstavljaju stranice kao i dugme za povratak korisnika na vrh stranice.
+U sekciji Dogs nalazi se ispis sa informacijama o svim vrstama pasa. Nalazi se search polje preko koga se mogu filtrirati psi po nazivu. Postoji Select polje preko koga se mogu selektovati sve macke po grupi rase. Na dnu se nalaze dugmici koji predstavljaju stranice kao i dugme za povratak korisnika na vrh stranice.
 
-U komponenti Log Out nalazi se pozdravna poruka kao i dugme za odjavljivanje sa sajta. Kada se klikne na dugme windows confirm vas pita da li stavrno zelite da se odjavite. Ukoliko kliknete da ne zelite, ostajete na istoj stranici i dalje ulogovani i mozete se i dalje kretati po sajtu. Ukoliko potvrdite da zelite da se izlogujete, vraticete se na home stranicu bez mogucnosti da se pristupa stranicama za logovane korisnike.
+U sekciji Profile nalaze se podaci o trenutno ulogovanom korisniku.
+
+U sekciji Log Out nalazi se pozdravna poruka kao i dugme za odjavljivanje sa sajta. Kada se klikne na dugme windows confirm vas pita da li stavrno zelite da se odjavite. Ukoliko kliknete da ne zelite, ostajete na istoj stranici i dalje ulogovani i mozete se i dalje kretati po sajtu. Ukoliko potvrdite da zelite da se izlogujete, vraticete se na home stranicu bez mogucnosti da se pristupa stranicama za logovane korisnike.
 
