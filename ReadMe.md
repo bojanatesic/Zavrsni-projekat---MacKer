@@ -17,12 +17,6 @@ U sekciji Dogs nalazi se ispis sa informacijama o svim vrstama pasa. Nalazi se s
 U sekciji Profile nalaze se podaci o trenutno ulogovanom korisniku.
 
 U sekciji Log Out nalazi se pozdravna poruka kao i dugme za odjavljivanje sa sajta. Kada se klikne na dugme windows confirm vas pita da li stavrno zelite da se odjavite. Ukoliko kliknete da ne zelite, ostajete na istoj stranici i dalje ulogovani i mozete se i dalje kretati po sajtu. Ukoliko potvrdite da zelite da se izlogujete, vraticete se na home stranicu bez mogucnosti da se pristupa stranicama za logovane korisnike.
-
-                                                       
-                                                         *** NAPOMENA ***
                                                          
- Sajt je hostovan na sledecem linku: https://macker.netlify.com/
+ Sajt je hostovan na sledecem linku: https://macker-app.netlify.com/
  
- Prilikom hostovanja, iz nekog razloga, ne prikazuje slike tako da je hostovana verzija bez slika, odnosno bez kompletnog CSS-a (pokusala sam da slike u projekat dodam i putem apsolutnih i putem relativnih putanja, ne funkcionise ni u jednom ni u drugom slucaju).
- 
- Na localhost:3000 se sajt prikazuje normalno, sa kompletnim CSS-om.
