@@ -33,12 +33,12 @@ const About = () => {
            Hope you will have fun!</p>
             </div>
             <div className="div-img">
-            <div className="div-cat">
-                <button onClick={() => showMeSomeCats()}>Show me some kitties </button>
+                <div className="div-cat">
+                    <button onClick={() => showMeSomeCats()}>Show me some kitties </button>
                     <CatImage catPicture={catPicture} />
-            </div>
+                </div>
                 <div className="div-dog">
-                <button onClick={() => showMeSomeDogs()}>Show me some doggies</button>
+                    <button onClick={() => showMeSomeDogs()}>Show me some doggies</button>
                     <DogImage dogPicture={dogPicture} />
                 </div>
             </div>

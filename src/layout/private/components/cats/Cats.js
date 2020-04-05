@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './CatList.css'
-import { getCatBreeds} from '../../../../services/Cat_service';
+import { getCatBreeds } from '../../../../services/Cat_service';
 import InputCat from './InputCat';
 import SelectCat from './SelectCat';
 import CatList from './CatList';
@@ -31,7 +31,6 @@ const Cats = () => {
             let filtered = cats.filter(el => el.origin === selected);
             setSubChangeArray(filtered)
             setCurrentPage(1)
-
         }
     }
 
@@ -57,26 +56,27 @@ const Cats = () => {
 
     return (
         <>
-        <Nav />
-        <div>
-            <div className="div-all">
-            <div className="div-input">
-                <p><b>Find more info about your favorite cat</b></p>
-            <InputCat handleInput={handleInput} />
-            </div>
-            <div className="div-select">
-            <p><b>Discover cats from all around the world</b></p>
-            <SelectCat handleChange={handleChange} cats={cats} />
-            </div>
-            </div>
-            {subArray.length > 0 ? <CatList cats={subArray} currentPage={1} catPerPage={catPerPage} />
-                : <CatList cats={subChangeArray} currentPage={currentPage} catPerPage={catPerPage} />}
+            <Nav />
+            <div>
+                <div className="div-all">
+                    <div className="div-input">
+                        <p><b>Find more info about your favorite cat</b></p>
+                        <InputCat handleInput={handleInput} />
+                    </div>
+                    <div className="div-select">
+                        <p><b>Discover cats from all around the world</b></p>
+                        <SelectCat handleChange={handleChange} cats={cats} />
+                    </div>
+                </div>
+                {subArray.length > 0 ? <CatList cats={subArray} currentPage={1} catPerPage={catPerPage} />
+                    : <CatList cats={subChangeArray} currentPage={currentPage} catPerPage={catPerPage} />}
                 <div className="pagination">
-            <PaginationCat catPerPage={catPerPage} cats={cats} setPage={setPage} />
+                    <PaginationCat catPerPage={catPerPage} cats={cats} setPage={setPage} />
+                </div>
+                <button onClick={() => { scrollToTop() }} className="top-btn">Go to the top of the page</button>
             </div>
-            <button onClick={() => { scrollToTop() }} className="top-btn">Go to the top of the page</button>
-        </div>
         </>
     )
 }
+
 export default Cats

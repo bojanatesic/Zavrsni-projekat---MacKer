@@ -2,7 +2,6 @@ import React from 'react'
 import Nav from '../../../Nav'
 import './WelcomePage.css'
 
-
 const WelcomePage = () => {
     return (
         <>

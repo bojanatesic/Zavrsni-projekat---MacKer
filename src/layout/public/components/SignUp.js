@@ -7,7 +7,7 @@ import Nav from '../../../Nav'
 
 
 
-export const SignUp = () => {
+export const Register = () => {
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')

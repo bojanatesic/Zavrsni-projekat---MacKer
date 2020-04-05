@@ -14,8 +14,6 @@ const Dogs = () => {
     const dogPerPage = 12
     const [subChangeArray, setSubChangeArray] = useState([])
 
-
-
     useEffect(() => {
         getDogBreeds().then(data => {
             setDogs(data);
@@ -31,13 +29,10 @@ const Dogs = () => {
     const handleInput = (e) => {
         if (e.target.value === '') {
             return setSubArray([]);
-
         }
         let filteredInput = dogs.filter(el => el.name.includes(e.target.value));
         setSubArray(filteredInput)
     }
-
-
 
     const handleChange = (e) => {
         let selected = e.target.value;

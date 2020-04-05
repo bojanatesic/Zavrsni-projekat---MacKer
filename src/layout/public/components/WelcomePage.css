@@ -1,40 +1,27 @@
-/* #welcome {
-padding-bottom: 20%;
-background-image: url('https://cdn.shopify.com/s/files/1/1209/2862/products/IMG_20190813_0003_885x700.jpg?v=1565722101');
-background-size: cover;
-opacity: rgb(220,325,112,0.2);
-
-} */
-
-
 #animation {
-width: 100px;
+  width: 100px;
   height: 100px;
   animation-name: example;
   animation-duration: 4s;
 }
 
-@keyframes example{
-
-}
-
 #text {
-    padding-top: 15%;
-    font-size: xx-large;
-    text-align: center;
-    animation-name: stretch;
-  animation-duration: 1.5s; 
-  animation-timing-function: ease-out; 
+  padding-top: 15%;
+  font-size: xx-large;
+  text-align: center;
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
   animation-delay: 1s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-fill-mode: none;
-  animation-play-state: running; 
-  }
+  animation-play-state: running;
+}
 
-  @keyframes stretch {
-    0% {
-      transform: scale(.3);
-      border-radius: 100%;
-    }
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    border-radius: 100%;
   }
+}
